@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá trị nhỏ nhất</title>
+</head>
+<body>
+<script>
+    function min(arr) {
+        minArr=arr[0];
+        for(let i=1;i<arr.length;i++){
+            if(minArr>arr[i]){
+                minArr=arr[i];
+            }
+        }
+        return minArr;
+    }
+    let arr1=[1,3,5,-1,7,8];
+    giaTriNhoNhat=min(arr1);
+    alert(giaTriNhoNhat);
+    
+</script>
+</body>
+</html>
